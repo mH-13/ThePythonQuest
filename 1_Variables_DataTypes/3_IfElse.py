@@ -1,5 +1,30 @@
-# If-Else Statements in Python
+"""
+If-Else Statements in Python
 
+If-else statements are used to execute a block of code based on a condition. 
+The condition is evaluated, and if it is true, the code inside the if block is executed. 
+If the condition is false, the code inside the else block is executed.
+
+Syntax:
+if condition:
+    # code to execute if condition is true
+else:
+    # code to execute if condition is false
+
+One-liner If-Else:
+Python allows the use of a one-liner if-else statement for simple conditions.
+
+Syntax:
+value_if_true if condition else value_if_false
+
+Example:
+result = "Even" if num % 2 == 0 else "Odd"
+"""
+
+# One-liner If-Else Example
+num = 5
+result = "Even" if num % 2 == 0 else "Odd"
+print(result)
 # Example 1: Simple If-Else
 age = 18
 

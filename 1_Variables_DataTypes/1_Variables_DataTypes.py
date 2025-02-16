@@ -1,6 +1,33 @@
 # Integer variable
+
 """
-This module demonstrates the use of various variable types in Python, including integers, floats, strings, booleans, lists, tuples, dictionaries, sets, and NoneType. It also includes examples of how to declare these variables and check their types.
+This module demonstrates the use of various variable types in Python, including integers, floats, strings, booleans, lists, tuples, dictionaries, sets, and NoneType. It also includes examples of how to declare these variables, check their types, and reassign values.
+
+
+
+- To reassign a variable, simply assign a new value to the variable name.
+
+Constants:
+- Constants are variables whose values are not intended to change.
+- By convention, constants are written in uppercase letters.
+- Example: `PI = 3.14159`
+
+
+
+Data Types in Python:
+- Numeric: int, float, complex
+- Sequence: str, list, tuple
+- Boolean: bool
+- Set: set
+- Mapping: dict
+
+- Numeric Types: Demonstrates the use of int, float, and complex types.
+- Sequence Types: Demonstrates the use of str, list, and tuple types.
+- Boolean Type: Demonstrates the use of the bool type.
+- Set Type: Demonstrates the use of the set type.
+- Mapping Type: Demonstrates the use of the dict type.
+
+
 
 Variables and Data Types:
 - Integer variable: `integer_var` (e.g., 42)
@@ -100,19 +127,10 @@ print("Updated Age:", age)
 a, b, c = 1, 2.5, "Hello"
 print("a:", a, "b:", b, "c:", c)
 
-# Example 5: Constants (Convention: Use uppercase for constants)
+# Example 5: Constants (Convention: Use uppercase for constants) 
+
 PI = 3.14159
 print("Value of PI:", PI)
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -127,13 +145,7 @@ print("Value of PI:", PI)
 # 4. Set: set
 # 5. Mapping: dict
 
-# Example 1: Numeric Types
-integer_num = 10          # int
-float_num = 10.5          # float
 complex_num = 3 + 4j      # complex
-
-print("Integer:", integer_num)
-print("Float:", float_num)
 print("Complex:", complex_num)
 
 # Example 2: Sequence Types
