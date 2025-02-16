@@ -1,5 +1,3 @@
-# loops.py
-
 # For Loop
 # A for loop is used for iterating over a sequence (list, tuple, dictionary, set, or string).
 
@@ -83,14 +81,3 @@ print(even_squares)
 # Example: One-liner while loop to print numbers
 count = 0
 while count < 5: print(count); count += 1
-
-
-# For Loop
-for i in range(5):
-    print(i)  # 0 1 2 3 4
-
-# While Loop
-count = 0
-while count < 3:
-    print(count)
-    count += 1
