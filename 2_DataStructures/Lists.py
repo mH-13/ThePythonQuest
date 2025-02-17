@@ -1,8 +1,4 @@
-"""
-This module provides an overview of lists in Python, including their creation, manipulation, and common operations.
-
-A list is a collection data type that is ordered and mutable. Lists are defined by enclosing elements in square brackets [].
-"""
+"""A list is a collection data type that is ordered and mutable. Lists are defined by enclosing elements in square brackets []."""
 
 # Creating a list
 empty_list = []
@@ -33,6 +29,19 @@ length = len(numbers)  # Get the number of elements in the list
 concatenated_list = numbers + [7, 8, 9]  # Concatenate two lists
 repeated_list = numbers * 2  # Repeat the list
 
+lst = [1,2,3,4,5]
+
+print(lst)
+lst.insert(2, 10)
+print(lst)
+lst.remove(3)
+print(lst) 
+print(lst.pop())
+print(lst)
+del lst[0]
+print(lst)
+print(lst * 3)
+
 # List comprehension
 squares = [x**2 for x in range(10)]  # Create a list of squares
 
@@ -60,7 +69,6 @@ first_element_of_first_sublist = nested_list[0][0]  # Access the first element o
 
 # Lists in Python
 
-# A list is a mutable, ordered collection of items. It can store elements of different data types.
 
 # Example 1: Creating a List
 fruits = ["apple", "banana", "cherry"]
