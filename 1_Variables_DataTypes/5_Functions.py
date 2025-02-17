@@ -77,8 +77,7 @@ fruits("apple", "banana", "cherry")
 # You can use any name for the keys in the dictionary when calling the function.
 # The **kwargs parameter is often used in functions that need to accept optional or extra arguments.
 # The **kwargs parameter is commonly used in decorators and functions that need to pass arguments to other functions.
-# The **kwargs parameter is useful when you want to pass a dictionary of arguments to another function.
-# The **kwargs parameter is useful when you want to pass a dictionary of arguments to a function that accepts keyword arguments.
+# The **kwargs parameter is useful when you want to pass a dictionary of arguments to another function and a function that accepts keyword arguments.
 
 def person_info(**kwargs):
   """This function takes arbitrary keyword arguments and prints them."""
@@ -158,115 +157,14 @@ print(factorial(5))  # Output: 120
 # You can pass data, known as parameters, into a function. 
 # A function can return data as a result.
 
-# Defining a function
-def my_function():
-  print("Hello from a function")
-
-# Calling a function
-my_function()
-
-# Functions with parameters
-def greet(name):
-  print(f"Hello, {name}")
-
-greet("Alice")
-
-# Functions with return values
-def add(a, b):
-  return a + b
-
-result = add(3, 4)
-print(result)
-
-# Default parameter values
-def greet(name="Guest"):
-  print(f"Hello, {name}")
-
-greet()
-greet("Bob")
-
-# Keyword arguments
-def describe_pet(animal_type, pet_name):
-  print(f"I have a {animal_type} named {pet_name}")
-
-describe_pet(animal_type="dog", pet_name="Rex")
-describe_pet(pet_name="Whiskers", animal_type="cat")
-
-# Arbitrary arguments (*args)
-def fruits(*args):
-  for fruit in args:
-    print(fruit)
-
-fruits("apple", "banana", "cherry")
-
-# Arbitrary keyword arguments (**kwargs)
-def person_info(**kwargs):
-  for key, value in kwargs.items():
-    print(f"{key}: {value}")
-
-person_info(name="Alice", age=30, city="New York")
-
-# Lambda functions (anonymous functions)
-square = lambda x: x * x
-print(square(5))
-
-# Higher-order functions (functions that take other functions as arguments)
-def apply_function(func, value):
-  return func(value)
-
-print(apply_function(square, 6))
-
-# Nested functions
-def outer_function(text):
-  def inner_function():
-    print(text)
-  inner_function()
-
-outer_function("Hello from nested function")
-
-# Closures
-def make_multiplier(x):
-  def multiplier(n):
-    return x * n
-  return multiplier
-
-times3 = make_multiplier(3)
-print(times3(10))
-
-# Decorators (functions that modify other functions)
-def my_decorator(func):
-  def wrapper():
-    print("Something is happening before the function is called.")
-    func()
-    print("Something is happening after the function is called.")
-  return wrapper
-
-@my_decorator
-def say_hello():
-  print("Hello!")
-
-say_hello()
-
-# Recursion (a function that calls itself)
-def factorial(n):
-  if n == 1:
-    return 1
-  else:
-    return n * factorial(n-1)
-
-print(factorial(5))
 
 
 
-
-
-
-
-
+#-------------------------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------------
 # Functions in Python
 
-# A function is a block of reusable code that performs a specific task.
-# Functions help in organizing code, making it modular and easier to maintain.
 
 # Example 1: Basic Function
 def greet():
@@ -354,8 +252,4 @@ def factorial(n):
 
 # Use Case: Calculating factorial in mathematical applications
 print("Factorial of 5:", factorial(5))  # Factorial of 5: 120
-
-
-
-
 
