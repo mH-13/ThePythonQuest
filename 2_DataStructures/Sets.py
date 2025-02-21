@@ -11,17 +11,17 @@ Examples:
 
 # Creating a set with curly braces
 fruits = {"apple", "banana", "cherry"}
-print(fruits)  # Output: {'apple', 'banana', 'cherry'}
+print(fruits)
 
 # Creating a set using the set() function
 numbers = set([1, 2, 3, 4, 5])
-print(numbers)  # Output: {1, 2, 3, 4, 5}
+print(numbers)
 
 """
 Adding and Removing Elements:
 - Use the add() method to add an element to a set.
-- Use the remove() method to remove an element from a set. If the element is not found, it raises a KeyError.
-- Use the discard() method to remove an element from a set. If the element is not found, it does nothing.
+- Use the remove() method to remove an element. If  not found, it raises a KeyError.
+- Use the discard() method also remove an element but If not found, it does nothing.
 - Use the pop() method to remove and return an arbitrary element from the set.
 - Use the clear() method to remove all elements from the set.
 
@@ -34,14 +34,14 @@ print(fruits)  # Output: {'apple', 'banana', 'cherry', 'orange'}
 
 # Removing elements
 fruits.remove("banana")
-print(fruits)  # Output: {'apple', 'cherry', 'orange'}
+print(fruits)  # Output: {'apple', 'cherry', 'orange'} ; KeyError 
 
 # Discarding elements
-fruits.discard("banana")  # No error if element is not found
+fruits.discard("banana")  # No error 
 print(fruits)  # Output: {'apple', 'cherry', 'orange'}
 
 # Popping elements
-popped_element = fruits.pop()
+popped_element = fruits.pop() 
 print(popped_element)  # Output: 'apple' (or any other element)
 print(fruits)  # Output: {'cherry', 'orange'}
 
