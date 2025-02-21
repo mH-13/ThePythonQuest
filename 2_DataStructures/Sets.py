@@ -56,37 +56,14 @@ Set Operations:
 - Difference: Returns elements in the first set but not in the second (use - operator or difference() method).
 - Symmetric Difference: Returns elements in either set, but not in both (use ^ operator or symmetric_difference() method).
 
-Examples:
-"""
-
-set_a = {1, 2, 3, 4}
-set_b = {3, 4, 5, 6}
-
-# Union
-union_set = set_a | set_b
-print(union_set)  # Output: {1, 2, 3, 4, 5, 6}
-
-# Intersection
-intersection_set = set_a & set_b
-print(intersection_set)  # Output: {3, 4}
-
-# Difference
-difference_set = set_a - set_b
-print(difference_set)  # Output: {1, 2}
-
-# Symmetric Difference
-symmetric_difference_set = set_a ^ set_b
-print(symmetric_difference_set)  # Output: {1, 2, 5, 6}
-
-"""
 Other Useful Methods:
 - issubset(): Checks if one set is a subset of another.
 - issuperset(): Checks if one set is a superset of another.
 - isdisjoint(): Checks if two sets have no elements in common.
 
-Examples:
 """
-
+set_a = {1, 2, 3, 4}
+set_b = {3, 4, 5, 6}
 # Subset
 print(set_a.issubset(set_b))  # Output: False
 
@@ -98,33 +75,16 @@ print(set_a.isdisjoint(set_b))  # Output: False
 
 
 
-
-
-# Sets in Python
-
-# A set is an unordered collection of unique elements. It is useful for removing duplicates and performing set operations.
-
-# Example 1: Creating a Set
-fruits = {"apple", "banana", "cherry"}
-print("Fruits Set:", fruits)
-
 # Use Case: Removing duplicates from a list
 shopping_list = ["apple", "banana", "apple", "cherry"]
 unique_items = set(shopping_list)
-print("Unique Items:", unique_items)
-
-# Example 2: Adding and Removing Elements
-fruits.add("orange")
-print("After Add:", fruits)
-
-fruits.remove("banana")
-print("After Remove:", fruits)
+print("Unique Items:", unique_items) # {'apple', 'banana', 'cherry'}
 
 # Use Case: Managing a collection of tags
 tags = {"python", "programming", "tutorial"}
 tags.add("coding")
 tags.remove("tutorial")
-print("Updated Tags:", tags)
+print("Updated Tags:", tags) # {'python', 'programming', 'coding'}
 
 # Example 3: Set Operations
 set1 = {1, 2, 3}
@@ -138,6 +98,9 @@ print("Intersection:", set1 & set2)  # {3}
 
 # Difference
 print("Difference:", set1 - set2)  # {1, 2}
+
+# Symmetric Difference
+print("symmetric_difference_set", set1 ^ set2)  # {1, 2, 4, 5}
 
 # Use Case: Finding common interests between users
 user1_interests = {"reading", "music", "sports"}
