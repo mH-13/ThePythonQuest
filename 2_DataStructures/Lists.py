@@ -47,6 +47,7 @@ squares = [x**2 for x in range(10)]  # Create a list of squares
 
 # Common list methods
 numbers.extend([7, 8, 9])  # Extend the list by appending elements from another list
+
 index_of_3 = numbers.index(3)  # Get the index of the first occurrence of 3
 count_of_3 = numbers.count(3)  # Count the number of occurrences of 3
 numbers.sort()  # Sort the list in ascending order
