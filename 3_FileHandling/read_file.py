@@ -1,15 +1,8 @@
 # various ways to read files in Python.
 
-# read the entire file at once
-# This method is useful for small files
-# as it reads the entire file into memory
-# and returns the content as a string
 # This is known as eager loading
-# as the entire file is loaded into memory at once
-# which can be inefficient for large files 
-# as it consumes a lot of memory
-# and may slow down the program
-# if the file is too large to fit into memory  
+# read the entire file at once into memory  and useful for small files
+# It is inefficient for large files  as it consumes a lot of memory and may slow down the program
 def read_entire_file(file_path):
 
   with open(file_path, 'r') as file: 
@@ -17,10 +10,8 @@ def read_entire_file(file_path):
     
   return content # Returns the content of the file as a string
 
-# read the file line by line
-# This method is useful for small files
-# as it reads the entire file into memory
-# and returns a list of lines
+# This is known as reading the file by lines and  also useful for small files
+# It also reads the entire file into memory and returns a list of lines
 def read_file_by_lines(file_path):
 
   with open(file_path, 'r') as file:
