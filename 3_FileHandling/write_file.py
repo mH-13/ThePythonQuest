@@ -1,15 +1,14 @@
-"""
-This script demonstrates how to write to a file in Python.
-"""
+#This script demonstrates how to write to a file in Python.
+
+#Writes the given content to a file specified by file_path.
+#file_path (str): The path to the file where the content will be written.
+#content (str): The content to write to the file.
+#Note: If the file does not exist, it will be created.
+#If the file exists, its content will be overwritten.
+#If an error occurs during the operation, an error message will be displayed.
+#The function does not return any value.
 
 def write_to_file(file_path, content):
-  """
-  Writes the given content to a file specified by file_path.
-
-  Parameters:
-  file_path (str): The path to the file where the content will be written.
-  content (str): The content to write to the file.
-  """
   try:
     with open(file_path, 'w') as file:
       file.write(content)
@@ -17,14 +16,16 @@ def write_to_file(file_path, content):
   except Exception as e:
     print(f"An error occurred while writing to the file: {e}")
 
-def append_to_file(file_path, content):
-  """
-  Appends the given content to a file specified by file_path.
 
-  Parameters:
-  file_path (str): The path to the file where the content will be appended.
-  content (str): The content to append to the file.
-  """
+#Appends the given content to a file specified by file_path.
+#file_path (str): The path to the file where the content will be appended. 
+#content (str): The content to append to the file.
+#Note: If the file does not exist, it will be created. 
+#If the file exists, the content will be appended to the end of the file.
+#If an error occurs during the operation, an error message will be displayed. 
+#The function does not return any value. 
+def append_to_file(file_path, content):
+
   try:
     with open(file_path, 'a') as file:
       file.write(content)
