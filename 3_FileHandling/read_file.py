@@ -1,60 +1,79 @@
-"""
-This script demonstrates various ways to read files in Python.
-"""
+# various ways to read files in Python.
 
+# read the entire file at once
+# This method is useful for small files
+# as it reads the entire file into memory
+# and returns the content as a string
+# This is known as eager loading
+# as the entire file is loaded into memory at once
+# which can be inefficient for large files 
+# as it consumes a lot of memory
+# and may slow down the program
+# if the file is too large to fit into memory  
 def read_entire_file(file_path):
-  """
-  Reads the entire content of a file.
-  
-  :param file_path: Path to the file to be read.
-  :return: Content of the file as a string.
-  """
-  with open(file_path, 'r') as file:
-    content = file.read()
-  return content
 
+  with open(file_path, 'r') as file: 
+    content = file.read()
+    
+  return content # Returns the content of the file as a string
+
+# read the file line by line
+# This method is useful for small files
+# as it reads the entire file into memory
+# and returns a list of lines
 def read_file_by_lines(file_path):
-  """
-  Reads a file line by line.
-  
-  :param file_path: Path to the file to be read.
-  :return: List of lines from the file.
-  """
+
   with open(file_path, 'r') as file:
     lines = file.readlines()
-  return lines
+    
+  return lines # Returns a list of lines from the file
 
+# read the file line by line using a loop
+# This method is useful for large files
+# as it reads the file line by line without loading the entire file into memory
+# This is known as lazy loading or lazy evaluation 
 def read_file_line_by_line(file_path):
-  """
-  Reads a file line by line using a loop.
-  
-  :param file_path: Path to the file to be read.
-  """
+
   with open(file_path, 'r') as file:
     for line in file:
       print(line, end='')
 
+
+# read the file using a context manager
+# This method is useful for ensuring proper resource management
+# as it automatically closes the file after reading
+# This is known as the with statement or context manager 
+# which ensures that the file is properly closed even if an exception occurs 
+# This is a common practice in Python to avoid resource leaks
+# and ensure that resources are released properly
+# after they are no longer needed
+# This is known as the RAII (Resource Acquisition Is Initialization) pattern
+# which is a common idiom in Python for managing resources
 def read_file_with_context_manager(file_path):
-  """
-  Reads a file using a context manager to ensure proper resource management.
-  
-  :param file_path: Path to the file to be read.
-  :return: Content of the file as a string.
-  """
+
   with open(file_path, 'r') as file:
     content = file.read()
-  return content
+    
+  return content # Returns the content of the file as a string
 
+
+
+# read the file in binary mode
+# This method is useful for reading non-text files
+# such as images, audio, video, etc.
+# as it reads the file as bytes
+# This is known as reading in binary mode 
+# which is useful for reading non-text files
+# as it preserves the original binary data
+# without any encoding or decoding
+# This is useful for reading files that are not in text format
+# such as images, audio, video, etc.
 def read_file_in_binary_mode(file_path):
-  """
-  Reads a file in binary mode.
-  
-  :param file_path: Path to the file to be read.
-  :return: Content of the file as bytes.
-  """
+
   with open(file_path, 'rb') as file:
     content = file.read()
-  return content
+    
+  return content # Returns the content of the file as bytes
 
 # Example usage:
 if __name__ == "__main__":
