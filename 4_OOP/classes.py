@@ -9,65 +9,43 @@ Usage:
   Create instances of Person and Student and demonstrate their methods.
 """
 
-class Person:
-  """
-  A class to represent a person.
+# A class to represent a person.
+# The class has attributes for name and age, and a method to greet the person.
+# The class also has a subclass Student with an additional attribute student_id.
+# The Student class inherits the greet method from the Person class and has an additional method study.
+# The example demonstrates creating instances of Person and Student and calling their methods.
+# The example also shows the use of docstrings to document the classes and methods.
+# The example uses the __init__ method to initialize the attributes of the classes.
+# The example uses the super() function to call the constructor of the parent class in the subclass.
+# The example demonstrates method overriding in the subclass by defining
+# a study method that is specific to the Student class.
 
-  Attributes:
+"""Attributes:
     name (str): The name of the person.
-    age (int): The age of the person.
-  """
+    age (int): The age of the person. """
+class Person:
 
-  def __init__(self, name, age):
-    """
-    The constructor for Person class.
+  def __init__(self, name, age): # The constructor for Person class.
 
-    Parameters:
-      name (str): The name of the person.
-      age (int): The age of the person.
-    """
-    self.name = name
-    self.age = age
+    self.name = name # Attribute 
+    self.age = age 
 
-  def greet(self):
-    """
-    Method to greet the person.
+  def greet(self): # Method to greet the person.
 
-    Returns:
-      str: A greeting message.
-    """
     return f"Hello, my name is {self.name} and I am {self.age} years old."
 
 
-class Student(Person):
-  """
-  A class to represent a student, which is a subclass of Person.
+class Student(Person): # A class to represent a student, which is a subclass of Person.
+  """ Attributes: name (str) ,  age (int).
+    student_id (str): The student ID."""
 
-  Attributes:
-    name (str): The name of the student.
-    age (int): The age of the student.
-    student_id (str): The student ID.
-  """
+  def __init__(self, name, age, student_id): # The constructor for Student class.
 
-  def __init__(self, name, age, student_id):
-    """
-    The constructor for Student class.
-
-    Parameters:
-      name (str): The name of the student.
-      age (int): The age of the student.
-      student_id (str): The student ID.
-    """
     super().__init__(name, age)
     self.student_id = student_id
 
-  def study(self):
-    """
-    Method to simulate the student studying.
+  def study(self): # Method to simulate the student studying.
 
-    Returns:
-      str: A message indicating the student is studying.
-    """
     return f"{self.name} is studying."
 
 

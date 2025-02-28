@@ -43,11 +43,6 @@ if __name__ == "__main__":
   
   
   
-
-
-
-# Writing to a File in Python
-
 # Example 1: Writing to a File
 # Use Case: Saving user input or program output to a file
 with open("output.txt", "w") as file:  # Open file in write mode
