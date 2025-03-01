@@ -37,26 +37,15 @@ class Queue:
   # The time complexity of deque is O(1) for append and pop operations.
   # The space complexity of deque is O(n) because it uses a doubly linked list.
 
-  def peek(self):
-    """Get the front item of the queue without removing it.
-    
-    Returns:
-      The item at the front of the queue.
-    
-    Raises:
-      IndexError: If the queue is empty.
-    """
+  def peek(self): # Get the front item of the queue without removing it.
+
     if self.is_empty():
       raise IndexError("peek from empty queue")
-    return self.items[0]
+    return self.items[0] # Return the first item in the list. The item at the front of the queue.
 
   def size(self):
-    """Get the number of items in the queue.
-    
-    Returns:
-      int: The number of items in the queue.
-    """
-    return len(self.items)
+
+    return len(self.items) # Return the number of items in the list.
 
 # Example usage:
 if __name__ == "__main__":
