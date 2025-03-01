@@ -74,29 +74,17 @@ if __name__ == "__main__":
   
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  # Queue in Python
 
-# A Queue is a First-In-First-Out (FIFO) data structure.
+  
+  # Queue in Python:  First-In-First-Out (FIFO) data structure.
 # It supports two main operations: enqueue (add an element) and dequeue (remove the front element).
 
 from collections import deque
 
 class Queue:
-    def __init__(self):
+    def __init__(self): # Constructor to initialize the queue.
         """Initialize an empty queue."""
-        self.items = deque()
+        self.items = deque() # Use deque to store the elements. initialize an empty deque.
 
     def enqueue(self, item):
         """Add an item to the end of the queue."""
