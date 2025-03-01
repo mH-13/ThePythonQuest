@@ -16,29 +16,36 @@ Complexity:
 
 class Queue:
   def __init__(self):
-
     self.items = [] # Initialize an empty queue. 
 
   def is_empty(self): # Check if the queue is empty. 
-
     return len(self.items) == 0 # Return True if the queue is empty, False otherwise.
 
   
   def enqueue(self, item): # Add an item to the rear of the queue. Args: item: The item to be added to the queue.
-
     self.items.append(item) # Append the item to the end of the list. 
+    # The time complexity is O(1) because it takes constant time to add an element to the end of the list.
 
   
   def dequeue(self): # Remove and return the front item of the queue. 
-
     if self.is_empty():
       raise IndexError("dequeue from empty queue")
-    return self.items.pop(0)  # Remove and return the first item from the list. The time complexity is O(n) because all elements are shifted by one. A better approach is to use collections.deque. 
+    return self.items.pop(0)  # Remove and return the first item from the list. The time complexity is O(n) because all elements are shifted by one. 
+  #A better approach is to use collections.deque.  It provides an optimized way to add and remove elements from both ends of the list. 
+  
+  # To use deque, import it from the collections module and initialize it as follows:
+  from collections import deque
+  #self.items = deque()
+  #The enqueue and dequeue methods can be modified as follows:
+  def enqueue(self, item):
+    self.items.append(item)
+  def dequeue(self):
+    if self.is_empty():
+      raise IndexError("dequeue from empty queue")
+    return self.items.popleft() # Use popleft() to remove and return the first item from the deque.
   # The time complexity of deque is O(1) for append and pop operations.
-  # The space complexity of deque is O(n) because it uses a doubly linked list.
 
   def peek(self): # Get the front item of the queue without removing it.
-
     if self.is_empty():
       raise IndexError("peek from empty queue")
     return self.items[0] # Return the first item in the list. The item at the front of the queue.
