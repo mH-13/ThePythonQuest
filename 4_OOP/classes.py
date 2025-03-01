@@ -11,14 +11,14 @@ Usage:
 
 # A class to represent a person.
 # The class has attributes for name and age, and a method to greet the person.
-# The class also has a subclass Student with an additional attribute student_id.
+# A subclass Student with an additional attribute student_id.
 # The Student class inherits the greet method from the Person class and has an additional method study.
 # The example demonstrates creating instances of Person and Student and calling their methods.
 # The example also shows the use of docstrings to document the classes and methods.
-# The example uses the __init__ method to initialize the attributes of the classes.
-# The example uses the super() function to call the constructor of the parent class in the subclass.
-# The example demonstrates method overriding in the subclass by defining
-# a study method that is specific to the Student class.
+#  __init__ method to initialize the attributes of the classes.
+# super() function to call the constructor of the parent class in the subclass.
+#  method overriding in the subclass by defining
+# study method that is specific to the Student class.
 
 """Attributes:
     name (str): The name of the person.
