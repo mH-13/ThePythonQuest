@@ -13,11 +13,10 @@ Usage:
 # The class has attributes for name and age, and a method to greet the person.
 # A subclass Student with an additional attribute student_id.
 # The Student class inherits the greet method from the Person class and has an additional method study.
-# The example demonstrates creating instances of Person and Student and calling their methods.
-# The example also shows the use of docstrings to document the classes and methods.
+# use of docstrings to document the classes and methods.
 #  __init__ method to initialize the attributes of the classes.
 # super() function to call the constructor of the parent class in the subclass.
-#  method overriding in the subclass by defining
+#  method overriding in the subclass by defining  
 # study method that is specific to the Student class.
 
 """Attributes:
@@ -62,9 +61,15 @@ if __name__ == "__main__":
   
   
   # Classes and Objects in Python
-
-# OOP is a programming paradigm that uses objects and classes to structure code.
 # A class is a blueprint for creating objects, and an object is an instance of a class.
+# Classes define attributes (data) and methods (functions) that operate on the data.
+# Objects can store data using attributes and perform actions using methods.
+# The __init__ method is a special method called the constructor that initializes the object.
+# The self parameter refers to the current instance of the class and is used to access attributes and methods.
+# Classes can have inheritance, where a subclass inherits attributes and methods from a parent class.
+# Methods can be overridden in subclasses to provide specialized behavior.
+# Classes and objects provide a way to model real-world entities and their interactions.
+# Classes are defined using the class keyword, and objects are created using the class name followed by parentheses. 
 
 # Example 1: Defining a Class
 class Dog:
