@@ -1,7 +1,4 @@
-"""
-Queue Implementation in Python
-
-A queue is a linear data structure that follows the First In First Out (FIFO) principle. 
+"""A queue is a linear data structure that follows the First In First Out (FIFO) principle. 
 Elements are added from the rear and removed from the front.
 
 Use Cases:
@@ -19,37 +16,26 @@ Complexity:
 
 class Queue:
   def __init__(self):
-    """Initialize an empty queue."""
-    self.items = []
 
-  def is_empty(self):
-    """Check if the queue is empty.
-    
-    Returns:
-      bool: True if the queue is empty, False otherwise.
-    """
-    return len(self.items) == 0
+    self.items = [] # Initialize an empty queue. 
 
-  def enqueue(self, item):
-    """Add an item to the rear of the queue.
-    
-    Args:
-      item: The item to be added to the queue.
-    """
-    self.items.append(item)
+  def is_empty(self): # Check if the queue is empty. 
 
-  def dequeue(self):
-    """Remove and return the front item of the queue.
-    
-    Returns:
-      The item removed from the front of the queue.
-    
-    Raises:
-      IndexError: If the queue is empty.
-    """
+    return len(self.items) == 0 # Return True if the queue is empty, False otherwise.
+
+  
+  def enqueue(self, item): # Add an item to the rear of the queue. Args: item: The item to be added to the queue.
+
+    self.items.append(item) # Append the item to the end of the list. 
+
+  
+  def dequeue(self): # Remove and return the front item of the queue. 
+
     if self.is_empty():
       raise IndexError("dequeue from empty queue")
-    return self.items.pop(0)
+    return self.items.pop(0)  # Remove and return the first item from the list. The time complexity is O(n) because all elements are shifted by one. A better approach is to use collections.deque. 
+  # The time complexity of deque is O(1) for append and pop operations.
+  # The space complexity of deque is O(n) because it uses a doubly linked list.
 
   def peek(self):
     """Get the front item of the queue without removing it.
