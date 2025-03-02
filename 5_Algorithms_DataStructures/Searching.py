@@ -2,8 +2,7 @@ import math
 
 # Searching Algorithms in Python
 
-# 1. Linear Search
-# Use Case: Suitable for small to medium-sized unsorted lists.
+# 1. Linear Search:  Suitable for small to medium-sized unsorted lists.
 # Time Complexity: O(n)
 def linear_search(arr, target):
   for i in range(len(arr)):
@@ -11,9 +10,7 @@ def linear_search(arr, target):
       return i
   return -1
 
-# Example usage:
-# arr = [2, 4, 0, 1, 9]
-# target = 1
+# Example usage:  arr = [2, 4, 0, 1, 9] ,  target = 1
 # print(linear_search(arr, target))  # Output: 3
 
 # 2. Binary Search
@@ -142,8 +139,6 @@ print(f"Element {target} found at index:", index)
 
 # Time Complexity: O(n) (inefficient for large datasets)
 # Space Complexity: O(1) (in-place search)
-
-
 
 
 
