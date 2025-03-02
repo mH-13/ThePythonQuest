@@ -13,8 +13,8 @@ def linear_search(arr, target):
 # Example usage:  arr = [2, 4, 0, 1, 9] ,  target = 1
 # print(linear_search(arr, target))  # Output: 3
 
-# 2. Binary Search
-# Use Case: Suitable for large sorted lists.
+
+# 2. Binary Search:  Suitable for large sorted lists.
 # Time Complexity: O(log n)
 def binary_search(arr, target):
   left, right = 0, len(arr) - 1
@@ -28,9 +28,7 @@ def binary_search(arr, target):
       right = mid - 1
   return -1
 
-# Example usage:
-# arr = [1, 2, 3, 4, 5]
-# target = 3
+# Example usage:  arr = [1, 2, 3, 4, 5],  target = 3
 # print(binary_search(arr, target))  # Output: 2
 
 # 3. Jump Search
