@@ -1,6 +1,5 @@
 class TreeNode:
-  """
-  A node in the binary search tree.
+  """A node in the binary search tree.
   
   Attributes:
   -----------
@@ -17,8 +16,7 @@ class TreeNode:
     self.right = None
 
 class BinarySearchTree:
-  """
-  A binary search tree (BST) implementation.
+  """ A binary search tree (BST) implementation.
   
   Methods:
   --------
@@ -35,8 +33,7 @@ class BinarySearchTree:
     self.root = None
 
   def insert(self, key):
-    """
-    Inserts a new node with the given key into the BST.
+    """ Inserts a new node with the given key into the BST.
     
     Parameters:
     -----------
@@ -61,8 +58,7 @@ class BinarySearchTree:
         self._insert(node.right, key)
 
   def search(self, key):
-    """
-    Searches for a node with the given key in the BST.
+    """Searches for a node with the given key in the BST.
     
     Parameters:
     -----------
@@ -84,8 +80,7 @@ class BinarySearchTree:
     return self._search(node.right, key)
 
   def delete(self, key):
-    """
-    Deletes a node with the given key from the BST.
+    """Deletes a node with the given key from the BST.
     
     Parameters:
     -----------
