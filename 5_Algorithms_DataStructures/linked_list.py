@@ -1,6 +1,5 @@
 class Node:
-  """
-  A Node in a linked list.
+  """ A Node in a linked list.
 
   Attributes:
     data: The data stored in the node.
@@ -12,8 +11,7 @@ class Node:
 
 
 class LinkedList:
-  """
-  A singly linked list.
+  """ A singly linked list.
 
   Methods:
     insert_at_beginning(data): Inserts a new node with the given data at the beginning of the list.
