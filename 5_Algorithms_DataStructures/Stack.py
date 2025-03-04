@@ -1,6 +1,5 @@
 class Stack:
-  """
-  A simple implementation of a stack data structure in Python.
+  """A simple implementation of a stack data structure in Python.
 
   A stack is a collection of elements with two principal operations:
   - push, which adds an element to the collection, and
@@ -121,3 +120,6 @@ stack.push("Action 2")
 print("Top of Stack:", stack.peek())  # Action 2
 stack.pop()
 print("Top of Stack after Pop:", stack.peek())  # Action 1
+
+#more about stack 
+# https://www.programiz.com/dsa/stack
