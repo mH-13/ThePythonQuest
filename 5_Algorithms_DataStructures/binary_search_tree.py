@@ -113,8 +113,7 @@ class BinarySearchTree:
     return current
 
   def inorder_traversal(self):
-    """
-    Performs an in-order traversal of the BST.
+    """Performs an in-order traversal of the BST.
     
     Returns:
     --------
@@ -219,3 +218,11 @@ bst.insert(3)
 bst.insert(7)
 print("Inorder Traversal:", bst.inorder_traversal())  # [3, 5, 7, 10, 15]
 print("Search for 7:", bst.search(7) is not None)  # True
+
+
+
+#more about binary search tree
+# A binary search tree (BST) is a binary tree where each node has a key, and the key satisfies the following properties:
+# - The key in the left child is less than the key in the parent node.
+# - The key in the right child is greater than the key in the parent node.
+# - The left and right subtrees are also binary search trees.
